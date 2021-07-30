@@ -1,0 +1,164 @@
+/* Google Web Fonts CDN */
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR:300,400,500,700,900&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Noto Sans KR', sans-serif;
+  margin: 0;
+  color : #333;
+  line-height: 1.5em;
+  font-weight: 300;
+  font-size: 15px;
+}
+
+a {
+  text-decoration: none;
+  color : #333;
+}
+
+/* Reset CSS */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 500;
+  margin-top: 0;
+}
+
+/* Dropdown Navigation */
+.program{
+  display: flex;
+  justify-content: center;
+}
+
+.program .inner{
+  /* border : 1px solid black; */
+  width: 1150px;
+  /* margin: auto; */
+}
+.program .inner h1{
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 30px;
+  margin-bottom: 30px;
+}
+
+.items{
+  /* border : 1px solid red; */
+  display: flex;
+  gap:40px;
+  /* justify-content: space-between; */
+}
+
+.item{
+  /* border : 1px solid blue; */
+  flex: 1;
+}
+
+.item_list {
+  text-align: center;
+  color : white;
+  padding:20px;
+}
+
+.item:nth-child(1) .item_list {
+  background-color: #195fab;
+}
+
+.item:nth-child(2) .item_list {
+  background-color: #5049a9;
+}
+
+.item:nth-child(3) .item_list {
+  background-color: #8c66c1;
+}
+
+.item_list h4 {
+  font-weight: 300;
+}
+
+.btn {
+  background-color: black;
+  color:white;
+  padding : 5px;
+  margin:3px;
+  width: 80px;
+  display: inline-block; 
+  /* inline 엘리먼트에서 불가능하던 width와 height 속성 지정 및 margin과 padding 속성의 상하 간격 지정이 가능 */
+}
+
+.btn.download {
+  width: 200px;
+}
+
+.item_desc {
+  padding:5px 15px;
+  font-size: 14px;
+}
+
+.item:nth-child(1) .item_desc {
+  border: solid #195fab;
+}
+
+.item:nth-child(2) .item_desc {
+  border: solid #5049a9;
+}
+
+.item:nth-child(3) .item_desc {
+  border: solid #8c66c1;
+}
+
+.item_desc p {
+  text-align: center;
+}
+
+.item_desc ul {
+  list-style: none;
+  margin:0;
+  padding:5px;
+  margin-bottom: 15px;
+  background-color: #eee;
+}
+
+.item_desc ul li:before {
+  content:'-';
+  margin-right: 5px;
+}
+
+/* CSS 방식 드롭다운 네비게이션 */
+
+/* 01 - Show Hide Function : Show Hide */
+/* .item_desc {
+  display: none;
+} */
+
+/* .item:hover .item_desc {
+  display: block;
+} */
+
+/* 02 - Show Hide Function : slide down */
+/* .item_desc {
+  height:0;
+  overflow: hidden;
+  padding:0;
+  transition: 0.5s;
+}
+
+.item:hover .item_desc {
+  height: 200px;
+  padding:5px 15px;
+} */
+
+/* 03 - Show Hide Function : Position */
+/* .item {
+  position: relative;
+}
+
+.item_desc {
+  position: absolute;
+  display: none;
+  background-color: white;
+}
+
+.item:hover .item_desc {
+  display: block;
+} */
